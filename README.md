@@ -1,5 +1,6 @@
-cat > README.md << 'EOF'
 # Cost-Sensitive & Fairness-Aware Credit Risk Prediction
+
+![Pipeline Results](complete_results.png)
 
 ## What this project does
 Predicts loan defaults using the Give Me Some Credit dataset (~150K records).
@@ -22,11 +23,12 @@ Goes beyond standard accuracy metrics by incorporating:
 - TPR fairness gap reduced: 55% to 32%
 
 ## How to run
+```bash
 pip install scikit-learn matplotlib seaborn pandas numpy
 python complete_pipeline.py
+```
 
 ## Dataset
 Download cs-training.csv from:
 https://www.kaggle.com/competitions/GiveMeSomeCredit/data
 Place in ./data/ folder.
-EOF
